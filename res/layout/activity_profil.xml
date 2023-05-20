@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fon_prof2"
+    tools:context=".ProfilScreen">
+
+    <Button
+        android:id="@+id/see_place_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/main_color"
+        android:text="@string/btn_see_place_books"
+        android:textColor="@color/button"
+        android:textSize="@dimen/size_textLih_MainScreen"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/main_color"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="@dimen/icon_back_left_ProfilScreen"
+        >
+
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="@dimen/icon_size_width"
+            android:layout_height="@dimen/icon_size_height"
+            android:src="@drawable/icon_back2" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@id/see_place_books">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_weight="0.1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="861dp"
+        app:cardBackgroundColor="@color/main_color"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_chat"
+            android:layout_width="@dimen/icon_size_width"
+            android:layout_height="@dimen/icon_size_height"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/icon_chat2" />
+
+        <ImageView
+            android:id="@+id/icon_add"
+            android:layout_width="@dimen/icon_size_width"
+            android:layout_height="@dimen/icon_size_height"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/icon_add4" />
+
+        <ImageView
+            android:id="@+id/ic_setting"
+            android:layout_width="@dimen/icon_size_width"
+            android:layout_height="@dimen/icon_size_height"
+            android:src="@drawable/ic_setting" />
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

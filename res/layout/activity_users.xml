@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/some">
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerViewUsers"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:context=".UsersActivity"
+    android:background="@color/some"
+    tools:listitem="@layout/user_item" />
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:id="@+id/btnprofile"
+        android:src="@drawable/icon_profil2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+    <ImageView
+        android:id="@+id/icon_back"
+        android:layout_width="@dimen/icon_size_width"
+        android:layout_height="@dimen/icon_size_height"
+        android:src="@drawable/icon_back2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
